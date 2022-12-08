@@ -1,0 +1,452 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v30-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/roboto-v30-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #fff;
+    background-color: #242E42
+ }
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+}
+
+/* Начало header */
+
+.header{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    transition: .2s linear;
+    padding: 3px 0;
+}
+.header_active{
+    background-color: #242E42;
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header_logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_text_logo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    margin-right: 39px;
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_item{
+    margin-right: 39px;
+    margin-bottom: 10px;
+}
+.header_item:last-child{
+    margin-left: 0px;
+}
+.header_link{
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.header_link:after{
+    transition: .3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #8585e4;
+    height: 1px;
+}
+.header_link:hover:after{
+    width: 100%;
+}
+
+/* Конец Header */
+
+/* Начало Intro */
+
+.intro{
+    min-height: 108vh;
+    background: url(../img/jpeg/intro\ 1intro_dark.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 400px;
+    padding-bottom: 223px;
+}
+.intro_title{
+    max-width: 619px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    margin-bottom: 22px;
+    }
+#blue1{
+    background: #1f1f5700;
+
+}
+.intro_subtitle{
+    max-width: 400px;
+    margin-bottom: 95px;
+    line-height: 24px;
+}
+.button1{
+    padding: 15px 38px;
+    background: #8282F7;
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+}
+.button1:hover{
+    background:#6868ec;
+}
+
+/* Конец Intro */
+
+/* Начало Benefits */
+/* Benefits 1 start */
+.benefits_exploitation_wrap{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    background-color: #2F3B52;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+.benefits_title{
+    width:  100%;
+    border-radius: 10px 10px 0 0;
+    background-color: #2F3B52;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    padding: 38px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+.benefits_cards{
+    /* max-width: 397px; */
+    display: grid;
+    text-align: center;
+    grid-column-gap: 103px;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: 300;
+}
+.benefit_card{
+    /* width: 397px; */
+    grid-column: span 1;
+}
+.benefit_card_text{
+    margin-bottom: 40px;
+}
+/* Benefits 1 end */
+
+/* Benefits 2 start */
+.benefits_wrap_2{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative;
+}
+.benefit_card_sweet_2{
+    padding: 15px;
+    background-color: #2F3B52;
+    border-radius: 10px;
+    max-width: 370px;
+    /* box-shadow: 0px 2px 20px rgba(126, 126, 126, 0.16); */
+}
+.benefits_cards_2{
+    display: grid;
+    text-align: center;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.benefit_card_2{
+    padding: 20;
+}
+.benefits_card-thumb{
+    padding-bottom: 10px;
+}
+.benefits_card_title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 30px;
+}
+.benefits_card_desc{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(224, 224, 224);
+}
+/* Benefits 2 end */
+/* Конец Benefits */
+
+/* Начало Exploitation */
+
+.exploitation{
+    border-radius: 10px;
+    padding: 30px;
+}
+.exploitation_title{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.exploitation_cards{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+.exploitation_card_title{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.exploitation_card_subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+.exploitation_card_desc{
+    font-size: 14px;
+    font-weight: 300;
+    color: #E0E0E0;
+}
+
+/* Конец Exploitation */
+
+/* Начало Application */
+
+.application_wrapper{
+    background: url(../img/png/gardient.png) 0 -300px no-repeat;
+    background-size: cover;
+    left: 0;
+    width: 100%;
+    max-height:2000px;
+    padding-bottom: 50px;
+}
+.application_text_announce{
+    float: left;
+    max-width: 650px;
+    padding: 25px;
+}
+.application_title{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 30px;
+}
+.application_explane{
+    font-weight: 300;
+    margin-top: 200px;
+    max-width: 600px;
+
+}
+.application_subtitle{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.application_facilities_item{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.application_facilities_item::marker{
+    content:"› ";
+    font-size: 20px;
+}
+.phone_photo{
+    text-align: right;
+    margin: 1px 0 0 0;
+}
+.phone_image{
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+}
+/* Конец Application */
+
+/* Начало Footer */
+.footer{
+    background-color: #30446A;
+    padding: 119px 0;
+}
+.footer_item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.footer_logo{
+    width: 50%;
+}
+.footer_logo_full{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_logo_text{
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 15px;
+    user-select: none;
+}
+
+.footer_nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+}
+
+.footer_menu_title{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer_menu_link{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer_menu_link:hover{
+    opacity: .75;
+}
+/* Конец Footer */

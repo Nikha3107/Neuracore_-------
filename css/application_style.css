@@ -1,0 +1,335 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v30-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/roboto-v30-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/montserrat-v25-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #fff;
+    background-color: #242E42
+ }
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+}
+
+/* Начало header */
+
+.header{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    transition: .2s linear;
+    padding: 3px 0;
+}
+.header_active{
+    background-color: #242E42;
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header_logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_text_logo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    margin-right: 39px;
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_item{
+    margin-right: 39px;
+    margin-bottom: 10px;
+}
+.header_item:last-child{
+    margin-left: 0px;
+}
+.header_link{
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.header_link:after{
+    transition: .3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #8585e4;
+    height: 1px;
+}
+.header_link:hover:after{
+    width: 100%;
+}
+
+/* Конец Header */
+
+/* Начало application */
+.application_title{
+    margin-top: 200px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.application_wrapper{
+    background-color: #2F3B52;
+    margin-bottom: 30px;
+    padding: 60px;
+    border-radius: 10px;
+}
+.sleep_and_meditation_title{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.sleep_and_meditation{
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    gap: 30px;
+    /* margin: 30px 60px; */
+}
+.text_block{
+    /* max-width: 510px; */
+    display: block;
+    border: 7px solid #535A6F;
+    padding: 50px;
+}
+.block_title{
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.block_text{
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.long{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.sleep{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    min-height: 300px;
+    background-image: url(../img/png/meditation-1.png);
+    background-size: cover;
+}
+.meditation{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    min-height: 300px;
+    background-image: url(../img/png/meditation-2.png);
+    background-size: cover;
+}
+.benefit_title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.benefit_item{
+    align-items: center;
+    display:inline-flex;
+}
+.benefit{
+    margin: 20px;
+}
+.title_inside_application{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 60px 0 30px;
+}
+.education{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    /* margin: 30px 60px; */
+}
+.education_img{
+    min-height: 300px;
+    background-image: url(../img/png/education1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+}
+.action_item{
+    /* list-style-position:inside; */
+    margin-left: 11px;
+}
+.action_item::marker{
+    content:"› ";
+    font-size: 20px;
+}
+/* Конец application */
+
+/* Начало Footer */
+.footer{
+    background-color: #30446A;
+    padding: 119px 0;
+}
+.footer_item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.footer_logo{
+    width: 50%;
+}
+.footer_logo_full{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_logo_text{
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 15px;
+    user-select: none;
+}
+
+.footer_nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+}
+
+.footer_menu_title{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer_menu_link{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer_menu_link:hover, .footer_menu_link:focus, .footer_menu_link:active{
+    opacity: .75;
+}
+/* Конец Footer */
