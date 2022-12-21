@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuracore</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=f2d4d8f7-ad16-4e53-a506-b0b3251165f7" type="text/javascript"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/contacts_style.css">
 </head>
@@ -74,7 +75,7 @@
                         </div>
                     </div>
                     <div class="contacts_grid">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae98106646be61045f6428e122564dd20a6a25c168c7154e3127263ea96c2b3ce&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                        <div id="YMapsID" style="width: 100%; height: 450px;"></div>
                     </div>
                 </div>
             </div>
@@ -102,19 +103,16 @@
                                 <h3 class="footer_menu_title">Neuracore</h3>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">Продукты</a>
+                                <a href="./Products.html" class="footer_menu_link">Продукты</a>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">Сон</a>
+                                <a href="./Application.html" class="footer_menu_link">Сферы применения</a>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">Разработчикам</a>
+                                <a href="./For_developers.html" class="footer_menu_link">Разработчикам</a>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">Контакты</a>
-                            </li>
-                            <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">О нас</a>
+                                <a href="./Contacts.html" class="footer_menu_link">Контакты</a>
                             </li>
                         </ul>
                         <ul class="footerm_menu">
@@ -122,16 +120,16 @@
                                 <h3 class="footer_menu_title">Наши партнеры</h3>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">About</a>
+                                <a href="https://sk.ru" class="footer_menu_link">Сколково</a>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">Team</a>
+                                <a href="https://mipt.ru" class="footer_menu_link">МФТИ</a>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">About</a>
+                                <a href="https://neuromir.ru" class="footer_menu_link">Neuromir</a>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">Team</a>
+                                <a href="http://neuroforsage.ru" class="footer_menu_link">Neuroforsage</a>
                             </li>
                         </ul>
                         <ul class="footerm_menu">
@@ -139,16 +137,16 @@
                                 <h3 class="footer_menu_title">Социальные сети</h3>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">Facebook</a>
+                                <a href="https://facebook.com" class="footer_menu_link">Facebook</a>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">VK</a>
+                                <a href="https://vk.com/" class="footer_menu_link">VK</a>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">Telegram</a>
+                                <a href="https://t.me/Neuracore" class="footer_menu_link">Telegram</a>
                             </li>
                             <li class="footer_menu_item">
-                                <a href="#!" class="footer_menu_link">Instagram</a>
+                                <a href="https://instagram.com" class="footer_menu_link">Instagram</a>
                             </li>
                         </ul>
                     </nav>
@@ -156,8 +154,8 @@
             </div>
         </footer>
         <!-- footer end -->
-
     </main>
     <script src="./js/main.js"></script>
+    <script src="./js/geolocation.js"></script>
 </body>
 </html>
