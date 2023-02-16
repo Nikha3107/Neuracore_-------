@@ -34,3 +34,17 @@ function routeTo() {
         });
     });
 }
+let feedbackForm = document.getElementById('feedbackForm');
+
+let userInfo = localStorage.getItem('userInfo');
+
+if (userInfo) { userInfo = JSON.parse(userInfo); //проверка наличия информации в Local Storage
+    document.getElementById('name').value = userInfo.name;
+    document.getElementById('email').value = userInfo.email;
+}
+
+feedbackForm.addEventListener('submit', (e) => { e.preventDefault(); //listen for form submit
+    let name = document.getElementById('name').value; //получение значений из форм
+    let email = document.getElementById('email').value;
+    let userInfo = { name: name, email: email, message: message }; //Сохранение в local storage
+    localStorage.setItem('userInfo', JSON.stringify(userInfo)); });

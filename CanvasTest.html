@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        CanvasMaster=new Object();
+        CanvasMaster.showCanvas=function(){
+        canvasNow = document.getElementById("picFrame");
+        contextNow = canvasNow.getContext('2d');
+        pic = new Image();
+        pic.onload = function() {
+        contextNow.drawImage(pic,10,10);
+        contextNow.strokeRect(9, 9, 332, 222);
+        contextNow.strokeStyle="black";
+        contextNow.stroke();
+        }
+        pic.src = './img/jpeg/develop.png'; }
+    </script>
+    <style>
+        body {
+        background-color:#a8afd1;
+        }
+    </style>
+</head>
+<body onLoad="CanvasMaster.showCanvas()">
+    <article>
+        <figure>
+            <canvas id="picFrame" width="350" height="250"></canvas>
+        </figure>
+    </article>
+</body>
+</html>
